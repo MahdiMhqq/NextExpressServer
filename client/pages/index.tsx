@@ -1,12 +1,16 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
-    <div className=''>My App</div>
-  )
-}
+    <>
+      <h1>Welcome to express-server app</h1>
+      <hr />
+      <Link href={"/events"} passHref>
+        <a>Go to events page</a>
+      </Link>
+    </>
+  );
+};
 
-export default Home
+export default Home;
